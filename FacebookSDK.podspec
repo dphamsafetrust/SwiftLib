@@ -26,6 +26,7 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target = "14.0"
   spec.swift_version = "5.0"
+  spec.requires_arc = true
 
   # spec.source        = { :git => "https://github.com", :tag => "#{spec.version}" }
   # spec.source_files = "*"
@@ -33,7 +34,7 @@ Pod::Spec.new do |spec|
   
   # spec.vendored_frameworks = "distributions/#{spec.version}/SwiftLib.framework"
   # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64' }
-  spec.source           = { :http => "https://github.com/facebook/facebook-ios-sdk/releases/download/v14.0.0/FacebookSDK_Dynamic.xcframework.zip" }
+  spec.source           = { :http => "https://github.com/facebook/facebook-ios-sdk/releases/download/v14.0.0/FacebookSDK_Dynamic.xcframework.zip", :type => "zip", :flatten => true }
 
   spec.vendored_frameworks = "XCFrameworks/FBSDKLoginKit.xcframework"
 
