@@ -19,6 +19,7 @@ Pod::Spec.new do |spec|
   # spec.preserve_path = "*"
   
   # spec.vendored_frameworks = "distributions/#{spec.version}/SwiftLib.framework"
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.source           = { :http => "https://github.com/googlemaps/google-maps-ios-utils/releases/download/v4.1.0/GoogleMapsUtils.xcframework.zip" }
 
   spec.vendored_frameworks = "GoogleMapsUtils.xcframework"
