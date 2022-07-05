@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.description  = "This CocoaPods library helps you perform calculation."
 
   spec.homepage     = "https://github.com/dtransafetrust/SwiftLib"
-  s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
+  spec.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
