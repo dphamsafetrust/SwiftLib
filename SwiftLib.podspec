@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "SwiftLib"
+  spec.name         = "GoogleMapsUtils"
   spec.version      = "0.1.0"
   spec.summary      = "A CocoaPods library written in Swift"
 
@@ -19,9 +19,9 @@ Pod::Spec.new do |spec|
   # spec.preserve_path = "*"
   
   # spec.vendored_frameworks = "distributions/#{spec.version}/SwiftLib.framework"
-  spec.source           = { :http => "https://github.com/dtransafetrust/SwiftLib/blob/master/distributions/#{spec.version}/SwiftLib.framework.zip" }
+  spec.source           = { :http => "https://github.com/googlemaps/google-maps-ios-utils/releases/download/v4.1.0/GoogleMapsUtils.xcframework.zip" }
 
-  spec.vendored_frameworks = "SwiftLib.framework"
+  spec.vendored_frameworks = "GoogleMapsUtils.xcframework"
 
 end
 
