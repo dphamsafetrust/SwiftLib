@@ -14,14 +14,14 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
 
   # spec.source        = { :git => "https://github.com", :tag => "#{spec.version}" }
-  # spec.source_files = "*"
-  # spec.preserve_path = "*"
+  spec.source_files = "*"
+  spec.preserve_path = "*"
   
   # spec.vendored_frameworks = "distributions/#{spec.version}/SwiftLib.framework"
   # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64' }
   # , :type => "zip", :flatten => true 
   spec.source           = { :git => "https://github.com/dphamsafetrust/SwiftLib" }
 
-  spec.vendored_frameworks = "distributions/0.1.2/XCFrameworks/FBAEMKit.xcframework"
+  spec.vendored_frameworks = "distributions/0.1.2/XCFrameworks/FBAEMKit.xcframework.zip"
 
 end
