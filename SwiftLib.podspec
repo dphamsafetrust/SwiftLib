@@ -22,6 +22,10 @@ Pod::Spec.new do |spec|
   # , :type => "zip", :flatten => true 
   spec.source           = { :git => "https://github.com/dphamsafetrust/SwiftLib" }
 
-  spec.vendored_frameworks = "distributions/0.1.2/XCFrameworks/FBAEMKit.xcframework.zip"
+  spec.vendored_frameworks = "distributions/0.1.2/XCFrameworks/FBAEMKit.xcframework"
+
+  spec.prepare_command         = <<-CMD
+unzip distributions/0.1.2/XCFrameworks/FBAEMKit.xcframework.zip -d distributions/0.1.2/XCFrameworks
+                            CMD
 
 end
