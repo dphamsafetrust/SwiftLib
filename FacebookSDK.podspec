@@ -18,8 +18,10 @@ Pod::Spec.new do |spec|
   # spec.preserve_path = "*"
   
   # spec.vendored_frameworks = "distributions/#{spec.version}/SwiftLib.framework"
-  spec.source           = { :http => "https://github.com/dtransafetrust/SwiftLib/archive/0.1.0/SwiftLib.framework.zip" }
-
-  spec.vendored_frameworks = "SwiftLib.framework"
+  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64' }
+  # , :type => "zip", :flatten => true 
+  spec.source           = { :http => "https://github.com/facebook/facebook-ios-sdk/releases/download/v14.0.0/FacebookSDK_Dynamic.xcframework.zip" }
+  
+  spec.vendored_frameworks = "XCFrameworks/FBSDKLoginKit.xcframework"
 
 end
